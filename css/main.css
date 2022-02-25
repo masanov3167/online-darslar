@@ -263,32 +263,28 @@ header img, main #courses img {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background: darkgrey;
+        background: white;
         border-radius: 5px;
         z-index: 2;
         top: 90px;
         width: 91%;
-        height: 350px;
+        height: 400px;
         transform: translateX(-120%);
         transition: transform .8s ease;
-        margin: 0;
-        padding: 15px 0;
-        line-height: 30px;
+        padding: 25px 0;
+        box-shadow: 0px 4px 15px 0px black;
     }
 
     .header-nav-item{
         margin: 5px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
-    
-    
+        
     .header-login{
         display: none;
-    }
-    
-    .login-bg{
-       display: none;
-    }
-     
+    }  
 }
 
 @media only screen and (min-width: 481px) and (max-width: 600px) {
@@ -331,7 +327,7 @@ header img, main #courses img {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background: black;
+        background: white;
         border-radius: 5px;
         z-index: 0;
         top: 90px;
@@ -339,9 +335,9 @@ header img, main #courses img {
         height: 390px;
         transform: translateY(-150%);
         transition: transform .8s ease;
-        margin: 0;
         padding: 15px 0;
         line-height: 30px;
+        box-shadow: 0px 4px 15px 0px black;
     }
 
     .header-nav-item{
@@ -399,17 +395,17 @@ header img, main #courses img {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background: black;
+        background: white;
         border-radius: 5px;
         z-index: 0;
         top: 85px;
         width: 92%;
-        height: 390px;
+        height: 360px;
         transform: translateY(-150%);
         transition: transform .5s ease;
-        margin: 0;
         padding: 15px 0;
         line-height: 30px;
+        box-shadow: 0px 4px 15px 0px black;
     }
 
     .header-nav-item{
@@ -464,14 +460,12 @@ header img, main #courses img {
         text-align: center;
     
         padding: 0 13%;
-       
-        background: url(https://images.wallpaperscraft.com/image/single/keyboard_telephone_desktop_179668_1366x768.jpg) no-repeat;
         background-size: cover;
     }
     
     
     .hero-description{
-        color: white;
+        color: #192774;
         font-size: 50px;
         font-weight: 700;
         line-height: 60px;
@@ -494,8 +488,6 @@ header img, main #courses img {
         text-align: center;
     
         padding: 0 7%;
-       
-        background: url(https://images.wallpaperscraft.com/image/single/keyboard_telephone_desktop_179668_1366x768.jpg) no-repeat;
         background-size: cover;
     }
     
