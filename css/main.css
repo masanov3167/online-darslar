@@ -436,9 +436,7 @@ header img, main #courses img {
     width: 100%;
     height: 100vh;
     text-align: center;
-
     padding: 0 23%;
-    /* background: url(https://images.wallpaperscraft.com/image/single/keyboard_telephone_desktop_179668_1366x768.jpg) no-repeat; */
     background-size: cover;
 }
 
@@ -451,25 +449,10 @@ section.hero::after {
     margin: -415px 0px 0px 530px;
 
     background: url('../img/20943758.jpg');
-    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/* section .hero::before {
-    content: '';
-    width: 500px;
-    height: 500px;
-    display: block;
-
-
-    margin: 40px 0px 0px 0px;
-
-    background: url('../img/20943759.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 
 .hero-description{
     color: #192774;
@@ -616,6 +599,7 @@ section.hero::after {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
+    color: #192774;
 }
 
 .courses-title::after{
@@ -667,6 +651,10 @@ section.hero::after {
 .courses-body-title{
     font-size: 25px;
     font-weight: 600;
+}
+
+.courses-body-number {
+    color: #000000b9;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -759,6 +747,8 @@ section.hero::after {
     font-size: 35px;
     font-weight: 700;
     margin: 15px;
+    color: #192774;
+
 }
 
 .static-item-title{
@@ -851,8 +841,8 @@ section.hero::after {
 
 .footer{
     width: 100%;
-    height: auto;
-    padding: 5% 10%;
+    height: 150px;
+    padding: 10px 0px;
     background: #131b43;
     color: #FBFCFE;
     display: flex;
@@ -862,11 +852,11 @@ section.hero::after {
     text-align: center;
 }
 
-.footer-title{
+/* .footer-title{
     font-size: 25px;
     font-weight: bold;
     opacity: 0.7;
-}
+} */
 
 .footer-info{
     font-size: 19px;
@@ -876,10 +866,20 @@ section.hero::after {
     opacity: 0.7;
 }
 
+.footer-info a {
+    text-decoration: none;
+    color: white;
+    transition: all .2s;
+}
+
+.footer-info a:hover{
+    opacity: 0.6;
+    transition: all .2s;
+}
+
 .footer-cap{
     display: flex;
     flex-wrap: wrap;
-    margin: 50px auto 0;
 }
 
 /* .footer-cap a{
