@@ -366,7 +366,8 @@ header img, main #courses img {
         padding: 0 15px;
     }
     .header-logo{
-        width: 110px;
+        width: 105px;
+        height: 45px;
     }
     .toggle, .toggle:active{
         display: block;
