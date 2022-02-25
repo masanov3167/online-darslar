@@ -262,6 +262,7 @@ header img, main #courses img {
         position: absolute;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         text-align: center;
         background: white;
         border-radius: 5px;
@@ -276,6 +277,7 @@ header img, main #courses img {
     }
 
     .header-nav-item{
+        font-size: 18px;
         margin: 5px 0;
         display: flex;
         align-items: center;
@@ -325,6 +327,7 @@ header img, main #courses img {
     .header-nav{
         position: absolute;
         display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
         text-align: center;
         background: white;
@@ -342,6 +345,7 @@ header img, main #courses img {
 
     .header-nav-item{
         margin: 5px 0;
+        font-size: 19px;
     }
     
     
@@ -393,6 +397,7 @@ header img, main #courses img {
     .header-nav{
         position: absolute;
         display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
         text-align: center;
         background: white;
@@ -410,6 +415,7 @@ header img, main #courses img {
 
     .header-nav-item{
         margin: 5px 0;
+        font-size: 17px;
     }
     
     .header-login{
