@@ -696,9 +696,16 @@ header img, main #courses img {
    .courses-img{
        height: 60%;
    }
+
+   .courses-body{
+       display: flex;
+       justify-content: start;
+       flex-direction: column;
+   }
    .courses-body-number{
        font-size: 20px;
        font-weight: 700;
+       margin-top: 15px;
    }
 }
 
