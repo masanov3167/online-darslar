@@ -1,0 +1,652 @@
+*{
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+
+.header{
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    padding: 0 100px;
+}
+
+.header-logo{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.header-logo:hover{
+    color: white;
+}
+
+.header-nav{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.header-nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 25px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    transition: all .2s;
+}
+
+.header-nav-item:hover{
+    color: #942323;
+    transition: all .2s;
+}
+
+.header-nav-item:hover::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #942323;
+    transition: all .5s;
+}
+.header-nav-item::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    background: #942323;
+    transition: all .5s;
+}
+
+.nav-login{
+    display: none;
+}
+.header-login{
+    display: flex;
+}
+
+.sign-in{
+    border-radius: 35px;
+    background: white;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    transition: all .5s;
+}
+
+.sign-in:hover{
+    transition: all .5s;
+    border:  1px solid #942323;
+    background: white;
+    color: #942323;
+}
+
+.sign-up{
+    border:  1px solid #942323;
+    border-radius: 35px;
+    background: white;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #942323;
+    margin-right: 20px;
+    transition: all .5s;
+}
+.sign-up:hover{
+    background: #942323;
+    color: white;
+    transition: all .5s;
+}
+
+.sign-in:active, .sign-up:active{
+    opacity: 0.6;
+}
+
+@media only screen and (min-width: 773px) and (max-width: 1024px) {
+    .header{
+        width: 100%;
+        height: 70px;
+        padding: 0 30px;
+    }
+    
+    .header-logo{
+        width: 150px;
+    }
+
+    .header-nav-item{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    .toggle{
+        display: none;
+    }
+    
+    .nav-login{
+        display: none;
+    }
+    
+    .header-login{
+        display: flex;
+    }
+    
+    .sign-in{
+        width: 70px;
+        height: 30px;
+        font-size: 13px;
+    }
+    
+    .sign-up{
+        width: 120px;
+        height: 30px;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    
+    .login-bg{
+       display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+    .header{
+        width: 100%;
+        height: 70px;
+        padding: 0 30px;
+    }
+    
+    .header-logo{
+        width: 130px;
+    }
+    .toggle{
+        display: block;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: url(../img/open.png) no-repeat;
+        background-size: cover;
+    }
+
+    .toggle.active:hover{
+        display: block;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: url(../img/close.png) no-repeat;
+        background-size: cover;
+    }
+
+    .toggle.active:hover ~ .header-nav{
+        transform: translate(0, 0);
+    }
+    
+    .nav-login{
+        display: flex;
+    }
+
+    .header-nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        border-radius: 5px;
+        z-index: 2;
+        top: 90px;
+        width: 91%;
+        height: 350px;
+        transform: translateX(-120%);
+        transition: transform .8s ease;
+        margin: 0;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+
+    .header-nav-item{
+        margin: 5px 0;
+    }
+    
+    
+    .header-login{
+        display: none;
+    }
+    
+    .login-bg{
+       display: none;
+    }
+     
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .header{
+        width: 100%;
+        height: 70px;
+        padding: 0 30px;
+    }
+    .header-logo{
+        width: 130px;
+    }
+    .toggle{
+        display: block;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: url(../img/open.png) no-repeat;
+        background-size: cover;
+    }
+
+    .toggle.active:hover{
+        display: block;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: url(../img/close.png) no-repeat;
+        background-size: cover;
+    }
+
+    .toggle.active:hover ~ .header-nav{
+        transform: translate(0, 0);
+    }
+    
+    .nav-login{
+        display: flex;
+    }
+
+    .header-nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        border-radius: 5px;
+        z-index: 0;
+        top: 90px;
+        width: 88%;
+        height: 390px;
+        transform: translateY(-150%);
+        transition: transform .8s ease;
+        margin: 0;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+
+    .header-nav-item{
+        margin: 5px 0;
+    }
+    
+    
+    .header-login{
+        display: none;
+    }
+    
+    .login-bg{
+       display: none;
+    }
+     
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .header{
+        width: 100%;
+        height: 70px;
+        padding: 0 15px;
+    }
+    .header-logo{
+        width: 110px;
+    }
+    .toggle, .toggle:active{
+        display: block;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: url(../img/open.png) no-repeat;
+        background-size: cover;
+    }
+
+    .toggle.active:hover{
+        display: block;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: url(../img/close.png) no-repeat;
+        background-size: cover;
+    }
+
+    .toggle.active:hover ~ .header-nav{
+        transform: translate(0, 0);
+    }
+    
+    .nav-login{
+        display: flex;
+    }
+
+    .header-nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        border-radius: 5px;
+        z-index: 0;
+        top: 85px;
+        width: 92%;
+        height: 390px;
+        transform: translateY(-150%);
+        transition: transform .5s ease;
+        margin: 0;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+
+    .header-nav-item{
+        margin: 5px 0;
+    }
+    
+    .header-login{
+        display: none;
+    }
+    
+    .login-bg{
+       display: none;
+    }
+     
+}
+
+
+/* main section here  */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    padding: 0 23%;
+   
+    background: url(https://images.wallpaperscraft.com/image/single/keyboard_telephone_desktop_179668_1366x768.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+.hero-description{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-top: 28%;
+}  
+.hero-down{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 150px;
+    margin:  120px auto 20px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1054px) {
+    .hero{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    
+        padding: 0 13%;
+       
+        background: url(https://images.wallpaperscraft.com/image/single/keyboard_telephone_desktop_179668_1366x768.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    
+    .hero-description{
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        padding-top: 20%;
+    }  
+    .hero-down{
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-top: 150px;
+        margin:  120px auto 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+    .hero{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    
+        padding: 0 7%;
+       
+        background: url(https://images.wallpaperscraft.com/image/single/keyboard_telephone_desktop_179668_1366x768.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    
+    .hero-description{
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        padding-top: 25%;
+    }  
+    .hero-down{
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-top: 150px;
+        margin:  120px auto 20px;
+    }
+}  
+
+@media only screen and (min-width: 450px) and (max-width: 539px) {
+    .hero{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    
+        padding: 0 5%;
+    }
+    .hero-description{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .hero-down{
+        width: 45px;
+        height: 45px;
+    }
+   
+} 
+
+@media only screen and (min-width: 320px) and (max-width: 449px) {
+    .hero{
+        width: 100%;
+        height: 90vh;
+        text-align: center;
+    
+        padding: 0 2%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .hero-description{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .hero-down{
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+
+/* courses code here  */
+
+.courses{
+    width: 100%;
+    padding: 3%;
+}
+
+.courses-title{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.courses-title::after{
+    display: block;
+    content: "";
+    width: 20%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.796);
+    margin: 0 auto;
+}
+.courses-card-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.courses-card{
+    width: 21%;
+    margin: 2%;
+    height: 300px;
+    background: whitesmoke;
+    border-radius: 5px;
+    transition: all .5s;
+    text-align: center;
+}
+
+.courses-card:hover {
+    box-shadow: 5px 5px 10px 10px #888888;
+    transition: all .5s;
+}
+
+.courses-img{
+    width: 90%;
+    height: 60%;
+    
+}
+
+.courses-body{
+    width: 100%;
+    height: 45%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.courses-body-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* .courses-body-url{
+    width: 70%;
+    height: 35px;
+    display: block;
+    border-radius: 2px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 auto;
+} */
+
+
+
+.static{
+    width: 100%;
+    height: 380px;
+    background: whitesmoke;
+    margin-top: 10px;
+    padding: 70px 30px 0px;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.static-item{
+    width: 23%;
+    height: 170px;
+    background: rgba(224, 223, 223, 0.671);
+   text-align: center;
+   border-radius: 5px;
+   margin: 10px 0;
+}
+
+.static-item span {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    /* margin-top: -20px; */
+}
+
+.static-item h3 {
+    font-size: 15px;
+    color: #000000b9;
+}
+
+.static-item-count{
+    margin: 15px;
+}
+.static-item-img{
+    width: 80px;
+    height: 80px;
+    margin: -40px 0px 0px -120px;
+}
+
+
+
+
+/* footer code here  */
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background: rgb(92, 85, 85);
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
