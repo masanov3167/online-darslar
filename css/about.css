@@ -1,0 +1,38 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+main .about {
+    margin: 0px auto;
+    height: 78vh;
+    width: 1000px;
+    padding-top: 120px;
+    margin-top: 5px;
+} 
+
+main .about .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+main .about .caption p{
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+main .about .caption p + p {
+    margin-top: 20px;
+}
+
+main .about .caption span {
+    display: block;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+main .about .caption span::before {
+    content: '●';
+    padding-right: 4px;
+}
