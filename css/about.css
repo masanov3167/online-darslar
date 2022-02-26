@@ -14,7 +14,10 @@ main .about .title {
     text-align: center;
     font-weight: bold;
     font-size: 27px;
-    margin-bottom: 20px;
+    color: #192774;
+    width: 250px;
+    border-bottom: 1px solid #192774;
+    margin: 0px auto 25px;
 }
 
 main .about .caption p{
