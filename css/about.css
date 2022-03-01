@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    margin: 0 auto;
+    height: auto;
+    width: 70%;
+    padding: 10% 5%;
+    margin-top: 5px;
+} 
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    color: #192774;
+    width: 250px;
+    border-bottom: 1px solid #192774;
+    margin: 20px auto 25px;
+}
+
+.caption p{
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+main .about .caption p + p {
+    margin-top: 20px;
+}
+
+main .about .caption span {
+    display: block;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+main .about .caption span::before {
+    content: '●';
+    padding-right: 4px;
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .about {
+        height: auto;
+        width: 80%;
+        padding: 12% 7%;
+        margin: 0 auto;
+    } 
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .about {
+        width: 100%;
+        padding: 15% 10%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    } 
+    
+    .title {
+        font-size: 23px;
+    }
+    
+    .caption p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .about {
+        width: 100%;
+        padding: 18% 3%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    } 
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    .caption p{
+        font-size: 14px;
+    }
+}
