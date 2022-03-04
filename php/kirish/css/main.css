@@ -32,7 +32,8 @@ body{
     font-weight: 600;
     text-align: center;
 
-    border-bottom: 2px solid red;
+    color: #192774;
+    border-bottom: 2px solid #192774;
     width: 50%;
     margin: 0 auto;
 }
@@ -61,13 +62,87 @@ body{
     font-weight: 600;
     text-align: center;
 
-    border-bottom: 2px solid red;
+    color: #192774;
+    border-bottom: 2px solid #192774;
     width: 70%;
     margin: 0 auto 10px;
     padding: 0;
 }
 
 .lessons{
+    display: block;
+    text-decoration: none;
     font-size: 17px;
     padding: 2% 4%;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .main-left{
+        width: 67%;
+    }
+    
+    .lesson-body{
+        font-size: 20px;
+    }
+    .main-right{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-left{
+        width: 100%;
+    }
+    
+    .lesson-title{
+        font-size: 24px;
+    }
+    .main-right{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .list-lessons{
+        font-size: 22px;
+        width: 60%;
+    }
+    .lessons{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-left{
+        width: 100%;
+    }
+    
+    .lesson-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .lesson-body{
+        font-size: 20px;
+    }
+    .main-right{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .list-lessons{
+        font-size: 18px;
+        width: 75%;
+    }
+    .lessons{
+        font-size: 18px;
+    }
 }
